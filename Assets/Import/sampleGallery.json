@@ -1,0 +1,74 @@
+{
+  "files": [
+    {
+      "pictureName": "Starry Night",
+      "artist": "Vincent VanGogh",
+      "url": "Assets/Textures/DefaultArt/Starry_Night.jpg",
+      "width": 1280,
+      "height": 1014
+    },
+    {
+      "pictureName": "The Cafe Terrace on the Place du Forum - Arles - at Night",
+      "artist": "Vincent VanGogh",
+      "url": "Assets/Textures/DefaultArt/Terrace-on-the-Place.jpg",
+      "width": 750,
+      "height": 923
+    },
+    {
+      "pictureName": "The Scream",
+      "artist": "Vincent VanGogh",
+      "url": "Assets/Textures/DefaultArt/The_Scream.jpg",
+      "width": 2048,
+      "height": 2609
+    },
+    {
+      "pictureName": "The Potato Eaters",
+      "artist": "Vincent VanGogh",
+      "url": "Assets/Textures/DefaultArt/die-kartoffelesser.jpg",
+      "width": 2048,
+      "height": 1455
+    },
+    {
+      "pictureName": "Starry Night",
+      "artist": "Vincent VanGogh",
+      "url": "Assets/Textures/DefaultArt/Starry_Night.jpg",
+      "width": 1280,
+      "height": 1014
+    },
+    {
+      "pictureName": "The Cafe Terrace on the Place du Forum - Arles - at Night",
+      "artist": "Vincent VanGogh",
+      "url": "Assets/Textures/DefaultArt/Terrace-on-the-Place.jpg",
+      "width": 750,
+      "height": 923
+    },
+    {
+      "pictureName": "The Scream",
+      "artist": "Vincent VanGogh",
+      "url": "Assets/Textures/DefaultArt/The_Scream.jpg",
+      "width": 2048,
+      "height": 2609
+    },
+    {
+      "pictureName": "The Potato Eaters",
+      "artist": "Vincent VanGogh",
+      "url": "Assets/Textures/DefaultArt/die-kartoffelesser.jpg",
+      "width": 2048,
+      "height": 1455
+    },
+    {
+      "pictureName": "The Scream",
+      "artist": "Vincent VanGogh",
+      "url": "Assets/Textures/DefaultArt/The_Scream.jpg",
+      "width": 2048,
+      "height": 2609
+    },
+    {
+      "pictureName": "The Potato Eaters",
+      "artist": "Vincent VanGogh",
+      "url": "Assets/Textures/DefaultArt/die-kartoffelesser.jpg",
+      "width": 2048,
+      "height": 1455
+    }
+  ]
+}
