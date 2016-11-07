@@ -1,4 +1,6 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
+
 using System.Collections;
 using System;
 using System.Text;
@@ -16,14 +18,33 @@ public class FillGalleryImages : MonoBehaviour {
 	// This should be attached to all the canvas objects in the scene
 	public GalleryCanvas[] canvases;
 
+	// This is the CameraCapture object
+	// It might have images already captured
+	private CameraCapture camCap;
+
 	// Use this for initialization
 	void Start () {
 		// get all the display gallery canvases
 		canvases = FindObjectsOfType<GalleryCanvas> ();
 
-		// Get all the gallery data
-		if (galleryId != null)
+		// Get the camera capture object
+		camCap = FindObjectOfType<CameraCapture>();
+
+		// If the camCap object is loaded with images, use it as the source of this tour
+		if (camCap.imageIndex != 0) {
+			Debug.Log ("adding raw items to gallery canvas");
+			showTexturesOnCanvases (camCap.imageStorage.ToArray());
+		} else if (galleryId != null) {
 			GetGallery (galleryId);
+		}
+	}
+
+	public void showTexturesOnCanvases (Texture[] raws) {
+		for (int i = 0; (i < raws.Length && i < canvases.Length); i++) {
+			Debug.Log ("show raw on canvas " + i.ToString () + " " + canvases[i].name);
+			if (raws[i] != null && canvases [i] != null)
+				canvases [i].loadTexture (raws [i]);
+		}
 	}
 
 	public void GetGallery(string id) {

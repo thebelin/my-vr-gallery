@@ -13,7 +13,6 @@ public class PointerCounter : MonoBehaviour {
 	public void markPointed () {
 		userPointers++;
 		text.text = userPointers.ToString () + "/" + totalPointers.ToString ();
-		Debug.Log ("src" + src.clip.length);
 
 		src.Play ();
 	}

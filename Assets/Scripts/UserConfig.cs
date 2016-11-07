@@ -7,6 +7,8 @@ public class UserConfig : MonoBehaviour {
 	public string defaultUserCode;
 	public string usercode;
 	public Text textBox;
+	public CanvasGroup pictureTaker;
+	public CanvasGroup startScreen;
 
 	// Use this for initialization
 	void Start () {
@@ -16,10 +18,10 @@ public class UserConfig : MonoBehaviour {
 
 	void newScene (Scene a, Scene b) {
 		// Find the FillGalleryImages and update the setting
-		FillGalleryImages fgi = FindObjectOfType<FillGalleryImages>();
-		if (fgi != null) {
-			fgi.GetGallery (usercode);
-		}
+//		FillGalleryImages fgi = FindObjectOfType<FillGalleryImages>();
+//		if (fgi != null) {
+//			fgi.GetGallery (usercode);
+//		}
 	}
 
 	// Update is called once per frame
@@ -42,6 +44,15 @@ public class UserConfig : MonoBehaviour {
 	public void loadDefaults() {
 		usercode = defaultUserCode;
 		loadGallery ();
+	}
+
+	public void takePictures () {
+		pictureTaker.interactable = true;
+		pictureTaker.blocksRaycasts = true;
+		pictureTaker.alpha = 1;
+		startScreen.interactable = false;
+		startScreen.blocksRaycasts = false;
+		startScreen.alpha = 0;
 	}
 
 	private void loadGallery() {

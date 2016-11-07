@@ -2,6 +2,7 @@
 using System.Collections;
 using System;
 
+[RequireComponent (typeof (Renderer))]
 public class GalleryCanvas : MonoBehaviour {
 
 	// The texture which will be applied to this image
@@ -12,8 +13,11 @@ public class GalleryCanvas : MonoBehaviour {
 
 	// Load a texture onto this item
 	public void loadTexture(Texture newTex) {
-		if (rend)
-			rend.material.mainTexture = newTex;
+		try {
+			rend.material.SetTexture("_MainTex", newTex);
+		} catch (Exception e){
+			Debug.Log ("LoadTexture Fail" + e.ToString());
+		}
 	}
 
 	// Load a texture from a byte array
