@@ -6,7 +6,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{2B51DA05-20BB-49D1-C5CA-04F8C06CB443}</ProjectGuid>
+    <ProjectGuid>{8EDAD872-1C9C-3377-0888-AE89304A3A18}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp-Editor</AssemblyName>
@@ -165,7 +165,7 @@
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/TreeEditor/Editor/UnityEditor.TreeEditor.dll</HintPath>
  </Reference>
  <Reference Include="Google.ProtocolBuffers">
- <HintPath>/Users/thebelin/Documents/unity/GVR_Test/Assets/Plugins/Google.ProtocolBuffers.dll</HintPath>
+ <HintPath>/Users/thebelin/Documents/unity/my-vr-gallery/Assets/Plugins/Google.ProtocolBuffers.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.Graphs">
  <HintPath>/Applications/Unity/Unity.app/Contents/Managed/UnityEditor.Graphs.dll</HintPath>
@@ -188,9 +188,9 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
-      <Project>{62D73596-344F-F45E-9FEA-73CAAE66AA40}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
+      <Project>{844A30D7-CAC3-9F02-828C-9D2BA948C016}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
     <ProjectReference Include="Assembly-CSharp.csproj">
-      <Project>{320CEB9B-6E7B-C463-1A21-53CB7D7706B8}</Project>      <Name>Assembly-CSharp</Name>    </ProjectReference>
+      <Project>{68B1A6D2-4F9F-337F-98C8-3FE53EA54379}</Project>      <Name>Assembly-CSharp</Name>    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

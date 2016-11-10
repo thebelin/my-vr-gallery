@@ -13,6 +13,7 @@ public class FillGalleryImages : MonoBehaviour {
 	// This should be set to the gallery id to fetch
 	public string galleryId;
 
+	// Holder for retrieved images (they are in an array which is a property of this class)
 	private GalleryImage images;
 
 	// This should be attached to all the canvas objects in the scene

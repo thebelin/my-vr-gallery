@@ -6,7 +6,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{320CEB9B-6E7B-C463-1A21-53CB7D7706B8}</ProjectGuid>
+    <ProjectGuid>{68B1A6D2-4F9F-337F-98C8-3FE53EA54379}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -90,6 +90,7 @@
      <Compile Include="Assets\GoogleVR\Scripts\UI\IGvrGazeResponder.cs" />
      <Compile Include="Assets\GoogleVR\Scripts\Utilities\GvrFPS.cs" />
      <Compile Include="Assets\GoogleVR\Scripts\Utilities\GvrIntent.cs" />
+     <Compile Include="Assets\Scripts\CameraCapture.cs" />
      <Compile Include="Assets\Scripts\DetectPictureView.cs" />
      <Compile Include="Assets\Scripts\FillGalleryImages.cs" />
      <Compile Include="Assets\Scripts\GalleryCanvas.cs" />
@@ -194,12 +195,12 @@
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
  </Reference>
  <Reference Include="Google.ProtocolBuffers">
- <HintPath>/Users/thebelin/Documents/unity/GVR_Test/Assets/Plugins/Google.ProtocolBuffers.dll</HintPath>
+ <HintPath>/Users/thebelin/Documents/unity/my-vr-gallery/Assets/Plugins/Google.ProtocolBuffers.dll</HintPath>
  </Reference>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
-      <Project>{62D73596-344F-F45E-9FEA-73CAAE66AA40}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
+      <Project>{844A30D7-CAC3-9F02-828C-9D2BA948C016}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

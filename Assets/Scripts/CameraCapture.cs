@@ -43,6 +43,7 @@ public class CameraCapture : MonoBehaviour
 	// This connects to the live camera on the device
 	private WebCamTexture webCamTexture;
 
+	// Runs at Start
 	void Start() 
 	{
 		// Don't destroy this on load
@@ -59,12 +60,14 @@ public class CameraCapture : MonoBehaviour
 		imageStorage = new List<Texture> ();
 	}
 
+	// Runs once per frame
 	void Update()
 	{
 		if (raw != null)
 			raw.texture = webCamTexture;
 	}
 
+	// Take a Photo
 	public void TakePhoto() {
 		if (shutterSimulator) {
 			shutterSimulator.canvasRenderer.SetAlpha (1f);
